@@ -21,9 +21,9 @@ public class MainActivity extends AppCompatActivity implements DataSingleton.Dat
         newText = (TextView) findViewById(R.id.textview_2);
         evenNewerText = (TextView) findViewById(R.id.textview_3);
 
-        oldText.setText(DataSingleton.getInstance().getMyText());
-        newText.setText(DataSingleton.getInstance().getMyText());
-        evenNewerText.setText(DataSingleton.getInstance().getMyText());
+        oldText.setText("Time: unknown");
+        newText.setText("Date: unknown");
+        evenNewerText.setText("Year: unknown");
 
         final Button button = (Button) findViewById(R.id.button);
         button.setOnClickListener(new View.OnClickListener() {
